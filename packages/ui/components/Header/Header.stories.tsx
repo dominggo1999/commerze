@@ -4,6 +4,7 @@ import { useFullscreen } from "../../hooks";
 import HeaderIconButton from "./HeaderIconButton";
 import { MdDarkMode } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Brand } from "../Brand";
 
 export const Default = () => {
   const { fullscreen, toggle } = useFullscreen();
@@ -12,7 +13,7 @@ export const Default = () => {
     <div className="relative">
       <HeaderContainer>
         <div className="flex h-full w-full items-center justify-between py-3">
-          <h1 className="text-xl font-bold">Test</h1>
+          <Brand />
           <div className="flex items-center gap-x-2">
             <HeaderIconButton
               onClick={toggle}
