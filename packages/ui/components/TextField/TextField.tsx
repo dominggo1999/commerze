@@ -1,6 +1,6 @@
 import React from "react";
 import { useTextField } from "@react-aria/textfield";
-import { AriaTextFieldProps } from "@react-types/textfield";
+import type { AriaTextFieldProps } from "@react-aria/textfield";
 import clsx from "clsx";
 
 type TextFieldProps = AriaTextFieldProps & {
