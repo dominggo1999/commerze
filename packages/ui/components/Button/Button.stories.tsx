@@ -3,7 +3,7 @@ import Button from "./Button";
 import { AiFillAndroid, AiFillHome, AiOutlinePlus } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import { BsFillPlayFill } from "react-icons/bs";
-import { Link } from "../ExternalLink";
+import { Link } from "react-router-dom";
 import { delay } from "../../utils/delay";
 
 export const Variants = () => {
@@ -185,7 +185,7 @@ export const Variants = () => {
 export const CustomRender = () => {
   return (
     <div className="mt-10 flex flex-wrap items-center gap-x-4">
-      <Button component={Link} href="https://www.google.com/" external>
+      <Button component={Link} to="https://www.google.com/" target="_blank">
         This is a link
       </Button>
       <Button variant="danger" component="div">

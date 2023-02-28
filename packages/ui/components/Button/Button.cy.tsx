@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { Link } from "../ExternalLink";
+import { Link } from "react-router-dom";
 
 describe("Button", () => {
   it("uses custom text for the button label", () => {
@@ -35,7 +35,7 @@ describe("Button", () => {
       <>
         <Button component="span">Click me!</Button>
         <Button component="div">Click me!</Button>
-        <Button href="#" component={Link}>
+        <Button target="_blank" to="#" component={Link}>
           Click me!
         </Button>
       </>,
