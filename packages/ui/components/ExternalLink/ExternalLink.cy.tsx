@@ -1,17 +1,7 @@
 import React from "react";
-import Link from "./Link";
+import Link from "./ExternalLink";
 
 describe("Link", () => {
-  it("renders an internal link correctly", () => {
-    const href = "/about";
-    const text = "About";
-    cy.mount(<Link href={href}>{text}</Link>);
-
-    cy.get("a").should("have.attr", "href").and("eq", href);
-    cy.get("a").should("not.have.attr", "target");
-    cy.get("a").should("not.have.attr", "rel");
-  });
-
   it("renders an external link correctly", () => {
     const href = "/about";
     const text = "About";

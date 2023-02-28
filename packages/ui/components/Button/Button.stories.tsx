@@ -3,7 +3,7 @@ import Button from "./Button";
 import { AiFillAndroid, AiFillHome, AiOutlinePlus } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import { BsFillPlayFill } from "react-icons/bs";
-import { Link } from "../Link";
+import { Link } from "../ExternalLink";
 import { delay } from "../../utils/delay";
 
 export const Variants = () => {

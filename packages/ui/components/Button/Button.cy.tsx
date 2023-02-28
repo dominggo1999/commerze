@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { Link } from "../Link";
+import { Link } from "../ExternalLink";
 
 describe("Button", () => {
   it("uses custom text for the button label", () => {

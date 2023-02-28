@@ -53,10 +53,12 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       react-icons: ^4.7.1
+      react-router-dom: ^6.8.2
       styled-components: ^5.3.6
       tailwindcss: ^3.2.4
       typescript: ^4.9.3
       vite: ^4.1.0
+      vite-tsconfig-paths: ^4.0.5
       zustand: ^4.3.3
     dependencies:
       '@acme/tailwind-config': link:../../packages/config/tailwind
@@ -70,6 +72,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-icons: 4.7.1_react@18.2.0
+      react-router-dom: 6.8.2_biqbaboplfbrettd7655fr4n2y
       styled-components: 5.3.6_vtcxgy2wlmese7djxl6h7ok674
       zustand: 4.3.3_react@18.2.0
     devDependencies:
@@ -83,6 +86,7 @@ importers:
       tailwindcss: 3.2.4_postcss@8.4.21
       typescript: 4.9.4
       vite: 4.1.4_@types+node@18.11.18
+      vite-tsconfig-paths: 4.0.5_typescript@4.9.4
 
   packages/config/tailwind:
     specifiers:
@@ -119,6 +123,7 @@ importers:
       react-aria: ^3.22.0
       react-dom: ^18.2.0
       react-icons: ^4.7.1
+      react-router-dom: ^6.8.2
       react-stately: ^3.20.0
       tailwindcss: ^3.2.4
       typescript: ^4.9.4
@@ -129,6 +134,7 @@ importers:
       class-variance-authority: 0.4.0_typescript@4.9.4
       clsx: 1.2.1
       react-aria: 3.22.0_biqbaboplfbrettd7655fr4n2y
+      react-router-dom: 6.8.2_biqbaboplfbrettd7655fr4n2y
       react-stately: 3.20.0_react@18.2.0
     devDependencies:
       '@acme/tailwind-config': link:../config/tailwind
@@ -3220,6 +3226,11 @@ packages:
       '@react-types/overlays': 3.6.5_react@18.2.0
       '@react-types/shared': 3.16.0_react@18.2.0
       react: 18.2.0
+    dev: false
+
+  /@remix-run/router/1.3.3:
+    resolution: {integrity: sha512-YRHie1yQEj0kqqCTCJEfHqYSSNlZQ696QJG+MMiW4mxSl9I0ojz/eRhJS4fs88Z5i6D1SmoF9d3K99/QOhI8/w==}
+    engines: {node: '>=14'}
     dev: false
 
   /@rushstack/eslint-patch/1.2.0:
@@ -7017,6 +7028,29 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
 
+  /react-router-dom/6.8.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-N/oAF1Shd7g4tWy+75IIufCGsHBqT74tnzHQhbiUTYILYF0Blk65cg+HPZqwC+6SqEyx033nKqU7by38v3lBZg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.3.3
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.8.2_react@18.2.0
+    dev: false
+
+  /react-router/6.8.2_react@18.2.0:
+    resolution: {integrity: sha512-lF7S0UmXI5Pd8bmHvMdPKI4u4S5McxmHnzJhrYi9ZQ6wE+DA8JN5BzVC5EEBuduWWDaiJ8u6YhVOCmThBli+rw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.3.3
+      react: 18.2.0
+    dev: false
+
   /react-stately/3.20.0_react@18.2.0:
     resolution: {integrity: sha512-5011Pmn8d17d1kbl7ScnQw1z+tXKsmTwVsAqrTARdZdH6NBmVNHEMlybU1t3/3PfcVn5XoRYwWvCgeTNZtNb8w==}
     peerDependencies:
@@ -7723,6 +7757,19 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
+  /tsconfck/2.0.3_typescript@4.9.4:
+    resolution: {integrity: sha512-o3DsPZO1+C98KqHMdAbWs30zpxD30kj8r9OLA4ML1yghx4khNDzaaShNalfluh8ZPPhzKe3qyVCP1HiZszSAsw==}
+    engines: {node: ^14.13.1 || ^16 || >=18}
+    hasBin: true
+    peerDependencies:
+      typescript: ^4.3.5
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.9.4
+    dev: true
+
   /tsconfig-paths/3.14.1:
     resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
     dependencies:
@@ -7996,6 +8043,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /vite-tsconfig-paths/4.0.5_typescript@4.9.4:
+    resolution: {integrity: sha512-/L/eHwySFYjwxoYt1WRJniuK/jPv+WGwgRGBYx3leciR5wBeqntQpUE6Js6+TJemChc+ter7fDBKieyEWDx4yQ==}
+    dependencies:
+      debug: 4.3.4
+      globrex: 0.1.2
+      tsconfck: 2.0.3_typescript@4.9.4
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
 
   /vite/3.2.5_@types+node@18.11.18:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}

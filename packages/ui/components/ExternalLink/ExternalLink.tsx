@@ -11,34 +11,15 @@ export interface LinkProps {
 
 const Link: React.FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
   (props, ref) => {
-    const {
-      href,
-      children,
-      external = false,
-      className,
-      ...otherProps
-    } = props;
-    if (external) {
-      return (
-        <a
-          href={typeof href === "string" ? href : "/"}
-          {...otherProps}
-          target="_blank"
-          rel="noreferrer noopener"
-          ref={ref}
-          className={className}
-        >
-          {children}
-        </a>
-      );
-    }
-
+    const { href, children, className, ...otherProps } = props;
     return (
       <a
-        className={className}
         href={typeof href === "string" ? href : "/"}
         {...otherProps}
+        target="_blank"
+        rel="noreferrer noopener"
         ref={ref}
+        className={className}
       >
         {children}
       </a>
