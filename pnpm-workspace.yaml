@@ -1,0 +1,5 @@
+packages:
+  - apps/commerze
+  - packages/config/*
+  - packages/ui
+  - packages/type-utils
