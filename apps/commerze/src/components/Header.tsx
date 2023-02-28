@@ -68,6 +68,7 @@ const Header = () => {
           <HeaderIconButton
             onClick={() => setIsOpen(!isSidebarOpen)}
             icon={<AiOutlineMenu />}
+            className={clsx(isSidebarOpen && "pointer-events-none")}
           />
         </div>
       </div>
