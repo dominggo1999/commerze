@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "clean": "rm -rf dist .turbo node_modules",
     "type-check": "tsc --noEmit",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-pwa-asset": "node scripts/pwa-asset-generator.mjs"
   },
   "dependencies": {
     "@acme/tailwind-config": "*",
@@ -31,6 +32,7 @@
     "zustand": "^4.3.3"
   },
   "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
@@ -38,9 +40,16 @@
     "eslint": "^8.30.0",
     "eslint-config-next": "^13.1.1",
     "postcss": "^8.4.19",
+    "pwa-asset-generator": "^6.2.1",
+    "rollup": "^3.17.3",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",
-    "vite-tsconfig-paths": "^4.0.5"
+    "vite-plugin-pwa": "^0.14.4",
+    "vite-tsconfig-paths": "^4.0.5",
+    "workbox-core": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-window": "^6.5.4"
   }
 }

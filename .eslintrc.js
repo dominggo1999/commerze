@@ -36,6 +36,7 @@ const config = {
     "**/*.config.js",
     "**/*.config.cjs",
     "packages/config/**",
+    "pwa-asset-generator.mjs",
   ],
 };
 
