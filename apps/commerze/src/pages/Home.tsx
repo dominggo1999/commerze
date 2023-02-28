@@ -56,7 +56,11 @@ const Home = () => {
       {isError && (
         <PageMessage title="Something Went Wrong" message="Try again later" />
       )}
-      {!isLoading && isNoResults && <span>No results found</span>}
+      {!isLoading && isNoResults && (
+        <span className="mt-5 inline-block font-semibold">
+          No results found
+        </span>
+      )}
 
       {data?.pages.map((group, i) => (
         <div className="py-10" key={i}>
