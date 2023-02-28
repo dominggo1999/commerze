@@ -8,5 +8,6 @@ export * from "./components/TextField";
 export * from "./components/Loading";
 export * from "./components/PageMessage";
 export * from "./components/ProductCard";
+export * from "./components/ProductDetails";
 
 export * from "./hooks";
