@@ -29,3 +29,17 @@ body {
 #root > main.dark {
   @apply bg-background-500 text-white;
 }
+
+/* Kbar */
+.kbar-container > div > div,
+.kbar-container > div > div input {
+  @apply !w-[80vw] sm:!w-[500px];
+}
+
+.kbar-container > div > div input {
+  @apply !rounded-lg;
+}
+
+.kbar-container > div > div > div {
+  @apply !overflow-hidden !rounded-lg !shadow-lg;
+}

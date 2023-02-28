@@ -14,11 +14,13 @@ import { BiExitFullscreen, BiFullscreen } from "react-icons/bi";
 import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import clsx from "clsx";
+import { useKBar } from "kbar";
 
 const Header = () => {
   const { fullscreen, toggle: toggleFullScreen } = useFullscreen();
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { isOpen: isSidebarOpen, setIsOpen } = useSidebarStore();
+  const { query } = useKBar();
   const isDark = theme === "dark";
 
   return (
@@ -35,7 +37,10 @@ const Header = () => {
         </Link>
 
         <div className="flex items-center gap-x-3">
-          <button className="mr-2 hidden items-center gap-x-3 text-sm md:flex">
+          <button
+            onClick={query.toggle}
+            className="mr-2 hidden items-center gap-x-3 text-sm md:flex"
+          >
             <span className="text-base">
               <AiOutlineSearch />
             </span>
@@ -47,6 +52,7 @@ const Header = () => {
           </button>
 
           <HeaderIconButton
+            onClick={query.toggle}
             className={clsx(
               "md:hidden",
               isSidebarOpen && "pointer-events-none",
