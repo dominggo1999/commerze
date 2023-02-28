@@ -6,5 +6,6 @@ export * from "./components/Kbd";
 export * from "./components/Sidebar";
 export * from "./components/TextField";
 export * from "./components/Loading";
+export * from "./components/PageMessage";
 
 export * from "./hooks";
