@@ -5,5 +5,6 @@ export * from "./components/Brand";
 export * from "./components/Kbd";
 export * from "./components/Sidebar";
 export * from "./components/TextField";
+export * from "./components/Loading";
 
 export * from "./hooks";
