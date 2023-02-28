@@ -62,15 +62,23 @@ const Home = () => {
         </span>
       )}
 
-      {data?.pages.map((group, i) => (
-        <div className="py-10" key={i}>
-          <ProductList products={group} key={i} />
-        </div>
-      ))}
+      {data?.pages.map((group, i) => {
+        if (group.length === 0) return null;
+
+        return (
+          <div className="py-10" key={i}>
+            <ProductList products={group} key={i} />
+          </div>
+        );
+      })}
 
       {hasNextPage && (
         <div className="mt-3 flex w-full justify-center">
-          <Button onClick={() => fetchNextPage()} disabled={isFetchingNextPage}>
+          <Button
+            isLoading={isFetchingNextPage}
+            onClick={() => fetchNextPage()}
+            disabled={isFetchingNextPage}
+          >
             Load More
           </Button>
         </div>
