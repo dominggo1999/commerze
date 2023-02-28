@@ -7,6 +7,7 @@ import {
   LoadingWithMessage,
   PageMessage,
 } from "@acme/ui";
+import { ProductList } from "components/index";
 
 const Home = () => {
   const searchRef = useRef<HTMLInputElement>(null);
@@ -34,8 +35,8 @@ const Home = () => {
   };
 
   return (
-    <Container>
-      <form className="my-10 flex flex-wrap gap-3" onSubmit={handleSubmit}>
+    <Container className="pb-10">
+      <form className="mt-10 flex flex-wrap gap-3" onSubmit={handleSubmit}>
         <TextField
           className="max-w-auto flex w-full"
           placeholder="Search product..."
@@ -58,11 +59,9 @@ const Home = () => {
       {!isLoading && isNoResults && <span>No results found</span>}
 
       {data?.pages.map((group, i) => (
-        <React.Fragment key={i}>
-          {group.map((project) => (
-            <p key={project.id}>{project.name}</p>
-          ))}
-        </React.Fragment>
+        <div className="py-10" key={i}>
+          <ProductList products={group} key={i} />
+        </div>
       ))}
 
       {hasNextPage && (
