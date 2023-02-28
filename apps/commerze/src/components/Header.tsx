@@ -65,7 +65,6 @@ const Header = () => {
             icon={fullscreen ? <BiExitFullscreen /> : <BiFullscreen />}
           />
 
-          {/* See https://www.npmjs.com/package/next-themes#avoid-hydration-mismatch for details */}
           <HeaderIconButton
             onClick={toggleTheme}
             icon={isDark ? <MdOutlineDarkMode /> : <MdLightMode />}
