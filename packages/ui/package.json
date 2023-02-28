@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@ladle/react": "^2.4.5",
+    "@react-aria/textfield": "^3.8.1",
     "@react-types/shared": "^3.16.0",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",

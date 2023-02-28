@@ -4,5 +4,6 @@ export * from "./components/Header";
 export * from "./components/Brand";
 export * from "./components/Kbd";
 export * from "./components/Sidebar";
+export * from "./components/TextField";
 
 export * from "./hooks";
