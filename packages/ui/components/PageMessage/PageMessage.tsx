@@ -16,7 +16,7 @@ const PageMessage: React.FC<PageMessageProps> = ({
   icon,
 }) => {
   return (
-    <main className="flex w-full flex-col items-center justify-center py-20 px-5 text-center sm:px-20">
+    <main className="flex w-full flex-col items-center justify-center px-5 pt-20 text-center sm:px-20">
       <span className="mb-3 text-6xl text-primary-500">
         {icon || <BiError />}
       </span>
