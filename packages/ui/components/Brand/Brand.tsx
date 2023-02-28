@@ -1,12 +1,23 @@
+import clsx from "clsx";
 import React from "react";
 
-export interface BrandProps {
+export interface BrandProps extends React.HTMLAttributes<HTMLSpanElement> {
   title?: string;
 }
 
-const Brand: React.FC<BrandProps> = ({ title = "Commerze" }) => {
+const Brand: React.FC<BrandProps> = ({
+  title = "Commerze",
+  className,
+  ...restProps
+}) => {
   return (
-    <span className="inline-block text-2xl font-bold text-primary-500">
+    <span
+      className={clsx(
+        "inline-block text-2xl font-bold text-primary-500",
+        className,
+      )}
+      {...restProps}
+    >
       {title}
     </span>
   );
