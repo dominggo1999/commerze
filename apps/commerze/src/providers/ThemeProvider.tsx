@@ -8,7 +8,7 @@ type ThemeContextType = {
 };
 
 export const ThemeContext = createContext<ThemeContextType>({
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => {},
   setTheme: () => {},
 });
@@ -20,7 +20,7 @@ interface ThemeProviderProps {
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     // Retrieve the theme from local storage or use the default value
-    return (localStorage.getItem("theme") || "light") as Theme;
+    return (localStorage.getItem("theme") || "dark") as Theme;
   });
 
   useEffect(() => {
