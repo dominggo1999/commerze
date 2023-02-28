@@ -5,6 +5,12 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        lg: "1.5rem",
+      },
+    },
     extend: {
       colors: {
         black: "#1A1926",
