@@ -19,6 +19,7 @@
     "@react-types/shared": "^3.16.0",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
+    "framer-motion": "^10.0.1",
     "react-aria": "^3.22.0",
     "react-router-dom": "^6.8.2",
     "react-stately": "^3.20.0"
