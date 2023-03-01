@@ -38,6 +38,7 @@ UI Component stories : https://commerze-commerze-stories.netlify.app/
   - Ada juga [github action](https://github.com/features/actions) (CI) buat running test dan build nya, bisa di check di folder .github
   - Eslint dan Prettier
   - Husky untuk pre-commit hook
+  - Animasi menggunakan [Framer Motion](https://www.framer.com/motion/)
 
 ### How to build and dev
 
