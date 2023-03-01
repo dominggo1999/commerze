@@ -38,7 +38,6 @@ importers:
       '@acme/tailwind-config': '*'
       '@acme/type-utils': '*'
       '@acme/ui': '*'
-      '@headlessui/react': ^1.7.11
       '@react-aria/textfield': ^3.8.1
       '@react-types/shared': ^3.16.0
       '@rollup/plugin-replace': ^5.0.2
@@ -76,7 +75,6 @@ importers:
       '@acme/tailwind-config': link:../../packages/config/tailwind
       '@acme/type-utils': link:../../packages/type-utils
       '@acme/ui': link:../../packages/ui
-      '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
       '@react-aria/textfield': 3.8.1_react@18.2.0
       '@react-types/shared': 3.16.0_react@18.2.0
       '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
@@ -1739,18 +1737,6 @@ packages:
     resolution: {integrity: sha512-k/MEBstff4sttohyEpXxCmC3MqbUn9VvHGlZ8fauLzkbwXmVrEeyzS+4uhrvAk9DWU9/7otYWxyDox4nT/KVLQ==}
     dependencies:
       tslib: 2.4.1
-    dev: false
-
-  /@headlessui/react/1.7.11_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-EaDbVgcyiylhtskZZf4Qb/JiiByY7cYbd0qgZ9xm2pm2X7hKojG0P4TaQYKgPOV3vojPhd/pZyQh3nmRkkcSyw==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: ^16 || ^17 || ^18
-      react-dom: ^16 || ^17 || ^18
-    dependencies:
-      client-only: 0.0.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -4335,10 +4321,6 @@ packages:
       slice-ansi: 5.0.0
       string-width: 5.1.2
     dev: true
-
-  /client-only/0.0.1:
-    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
-    dev: false
 
   /clone-response/1.0.3:
     resolution: {integrity: sha512-ROoL94jJH2dUVML2Y/5PEDNaSHgeOdSDicUyS7izcF63G6sTc/FTjLub4b8Il9S8S0beOfYt0TaA5qvFK+w0wA==}
