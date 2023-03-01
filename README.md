@@ -2,7 +2,8 @@
 
 Projek ini dibuat untuk menyelesaikan case study untuk posisi Frontend Developer Intern di [Rakamin](https://www.rakamin.com/).
 
-Deployment preview link : https://commerze-commerze.vercel.app/
+Deployment preview link : https://commerze-commerze.vercel.app/ 
+
 UI Component stories : https://commerze-commerze-stories.netlify.app/
 
 ## Features
