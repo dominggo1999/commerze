@@ -53,3 +53,30 @@ UI Component stories : https://commerze-commerze-stories.netlify.app/
   `cd apps/commerze && pnpm run build`
 
 \***_bisa baca dokumentasi turborepo dan pnpm terkait folder structure nya_**
+
+## Screenshots
+
+### App Preview
+![Preview](/screenshots/preview.gif)
+
+### Ladle 
+![Ladle](/screenshots/ladle-demo.gif)
+
+### Cypress
+![Cypress](/screenshots/cypress-demo.gif)
+
+### Command Palette
+![CMDK](/screenshots/cmdk.gif)
+
+### Light Mode
+![Light-Mode](/screenshots/light-mode.png)
+
+### Dark Mode
+![Dark-Mode](/screenshots/dark-mode.png)
+
+### PWA Desktop
+![PWA-Desktop](/screenshots/pwa-desktop.gif)
+
+### PWA Mobile
+![PWA-Mobile](/screenshots/pwa-mobile.gif)
+
