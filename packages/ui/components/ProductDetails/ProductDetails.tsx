@@ -24,7 +24,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
     <div className="mx-auto flex max-w-[1000px] flex-col justify-center gap-y-10 sm:flex-row">
       <div className="aspect-square w-full rounded-xl bg-background-light shadow-sm dark:bg-background-300 sm:w-[40%]">
         <img
-          className="h-full w-full overflow-hidden rounded-xl object-center object-cover"
+          className="!aspect-square !h-full !w-full overflow-hidden rounded-xl object-cover object-center"
           src={image}
           alt={`Product ${productId} image`}
         />
